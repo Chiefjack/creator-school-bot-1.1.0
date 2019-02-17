@@ -559,6 +559,7 @@ async def teacherrate(ctx, member: discord.Member):
 	teacher_rate = (f"**NEW TEACHER RATING!**\n**TEACHER IS:** {member.mention}\n**RATING IS:** {messagereplace}/10\n---")
 	teacher_rate_channel = bot.get_channel("544201403959214090")
 	await bot.send_message(teacher_rate_channel, teacher_rate)
+	await bot.say(f"Your Teacher rating has been submitted successfully, {ctx.message.author.mention}!")
 
 #TUTOR RATE
 
@@ -569,6 +570,7 @@ async def tutorrate(ctx, member: discord.Member):
 	tutor_rate = (f"**NEW TUTOR RATING!**\n**TUTOR IS:** {member.mention}\n**RATING IS:** {messagereplace}/10\n---")
 	tutor_rate_channel = bot.get_channel("544201584658350091")
 	await bot.send_message(tutor_rate_channel, tutor_rate)
+	await bot.say(f"Your Tutor rating has been submitted successfully!, {ctx.message.author.mention}")
 
 #USER REPORT
 
